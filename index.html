@@ -20,6 +20,8 @@
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
         }
         .logo {
             width: 100px;
@@ -43,6 +45,37 @@
         .contact-link:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .container {
+                padding: 20px;
+            }
+            .logo {
+                width: 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .container {
+                padding: 15px;
+            }
+            .logo {
+                width: 60px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -50,7 +83,6 @@
         <img src="Think_Easy_Academy_logo .png" alt="Logo" class="logo">
         <h1>❌ Access Denied ❌</h1>
         <p>Your IP address is restricted from accessing this site.</p>
-        <p>Please contact <a href="mailto:thinkeasyacademy98@gmail.com" class="contact-link">Think Easy Academy</a></p>
     </div>
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
